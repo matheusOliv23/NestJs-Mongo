@@ -9,9 +9,7 @@ import { env } from 'process';
     ConfigModule.forRoot({
       isGlobal: true,
     }), // process.env.xxx must be called after this line
-    MongooseModule.forRoot(
-      'mongodb+srv://crud_api:gtzKulEIj9aHYfaS@blog.7eayp.mongodb.net/test',
-    ),
+    MongooseModule.forRoot(env.DATABASE_CONNECTION),
     UsersModule,
   ],
   controllers: [],
