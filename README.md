@@ -11,7 +11,8 @@ O objetivo dessa API é para fins de estudo. Posso criar meus pequenos projetos 
 
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](classic.yarnpkg.com/en/docs/install)
-- Necessário possuir uma conta no Mongo Atlas para a criação de uma url para a variável DATABASE_CONNECTION
+- Necessário possuir uma conta no Mongo Atlas para a criação de uma url para as variáveis de ambiente. Confira atentamente se a sua chave está correta.
+
 
 ## 🔥 Instalação e execução
 
