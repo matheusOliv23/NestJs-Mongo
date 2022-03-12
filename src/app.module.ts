@@ -6,11 +6,14 @@ import { env } from 'process';
 
 @Module({
   imports: [
-    // ConfigModule.forRoot({
-    //   isGlobal: true,
-    // }), // process.env.xxx must be called after this line
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }), // process.env.xxx must be called after this line
+    // MongooseModule.forRoot(
+    //   'mongodb+srv://crud_api:gtzKulEIj9aHYfaS@blog.7eayp.mongodb.net/test',
+    // ),
     MongooseModule.forRoot(
-      'mongodb+srv://crud_api:gtzKulEIj9aHYfaS@blog.7eayp.mongodb.net/test',
+      `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@blog.7eayp.mongodb.net/test`,
     ),
     UsersModule,
   ],
