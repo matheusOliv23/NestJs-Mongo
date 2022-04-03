@@ -9,7 +9,9 @@ import { env } from 'process';
     ConfigModule.forRoot({
       isGlobal: true,
     }),
-    MongooseModule.forRoot(process.env.MONGO_URI),
+    MongooseModule.forRoot(
+      `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@blog.7eayp.mongodb.net/test`,
+    ),
     UsersModule,
   ],
   controllers: [],
