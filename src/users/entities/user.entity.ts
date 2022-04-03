@@ -1,4 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { Exclude } from 'class-transformer';
 import { Document } from 'mongoose';
 
 export type UserDocument = User & Document;
@@ -11,14 +12,12 @@ export class User {
   @Prop({ unique: true })
   email: string;
 
-  @Prop()
-  telefone: string;
+  @Exclude()
+  password: string;
 
-  @Prop()
-  cidade: string;
-
-  @Prop()
-  estado: string;
+  // constructor(partial: Partial<User>) {
+  //   Object.assign(this, partial);
+  // }
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
