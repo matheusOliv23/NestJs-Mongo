@@ -9,10 +9,11 @@ O objetivo dessa API é para fins de estudo. Posso criar meus pequenos projetos 
 
 ## 🚀 Tecnologias
 
--- Typescript
--- Bcrypt
--- Autenticação JWT
--- Autorização de rotas
+- Typescript
+- Bcrypt
+- Autenticação JWT
+- Autorização de rotas
+
 
 ## ✋🏻 Pré-requisitos
 
