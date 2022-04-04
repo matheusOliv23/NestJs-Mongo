@@ -7,6 +7,13 @@
 
 O objetivo dessa API é para fins de estudo. Posso criar meus pequenos projetos de estudo utilizando a minha própria API e criar novas variáveis ou rotas quando eu precisar.
 
+## 🚀 Tecnologias
+
+-- Typescript
+-- Bcrypt
+-- Autenticação JWT
+-- Autorização de rotas
+
 ## ✋🏻 Pré-requisitos
 
 - [Node.js](https://nodejs.org/en/)
